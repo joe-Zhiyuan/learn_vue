@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <!-- 针对IE特殊配置，让IE已最高渲染级别渲染页面，不支持IE8以下 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端理想视图，缩放级别等 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 网站页签图标， <%= BASE_URL %> 指向public文件夹下-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 配置标题 webpack插件-->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+      body{font-size:14px;background:#fff;-webkit-text-size-adjust:100%;} 
+      a{color:#2d374b;text-decoration:none} 
+      a:hover{color:#cd0200;text-decoration:underline} 
+      em{font-style:normal} 
+      li{list-style:none} 
+      img{border:0;vertical-align:middle} 
+      table{border-collapse:collapse;border-spacing:0} 
+      p{word-wrap:break-word}
+    </style>
+  </head>
+  <body>
+    <!-- 浏览器不支持js，noscript标签显示 -->
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- vue容器 -->
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
